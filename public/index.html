@@ -1,0 +1,57 @@
+<!DOCTYPE html><!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formulario Usuario</title>
+    <style>
+            
+        footer {
+            position: absolute;
+            background: red;
+            color: yellow;
+            width: 100%;
+            height: 100px;
+            left: 0px;
+            bottom: 0px;
+        }
+    </style>
+    <script type="text/javascript">
+        function libros() {
+            var libros = document.getElementById('select').value;
+
+            if (libros == '1') {
+                alert('Te recomendamos leer = "Harry Potter, Maze Runner, Assassins Creed".');
+            } else if (libros == '2') {
+                alert('Te recomendamos leer = "13 Reasons Why, La Cabaña, Carrie, IT".');
+            } else if (libros == '3') {
+                alert('Te recomendamos leer = "El Principito, Una historia Interminable, El Escarabajo Dorado".');
+            } else if (libros =='4'){
+                alert('Te recomendamos leer = "Bajo la Misma Estrella, El Hilo Rojo, Polvo De Estrellas".');
+            } else (libros == '5')
+                alert('No seleccionaste ningun \Libro de Recomendación/');
+            }
+    </script>
+</head>
+<body>
+    
+    <center><input type="text" name="txtNom" id="txtEdad" placeholder="Escriba su Nombre: " /> </center>
+    <br>
+    <center><input type="text" name="txtNom" id="txtEdad" placeholder="Escriba su Edad: " /></center></center>
+    <br>
+    <center><input type="text" name="txtMusic" id="" placeholder="Escriba su Correo: " /></center>
+    <br> <center><font face="Comic Sans MS,Comic Sans MS"><h3>¿QUÉ GENERO DE LIBROS TE GUSTARIA QUE TE RECOMENDARAMOS?</h3></font></center><br>
+    <center><select name="select" id="select">
+        <option value="1">Aventura</option>
+        <option value="2">Suspenso</option>
+        <option value="3">Infantiles</option>
+        <option value="4">Romanticos</option>
+    </select></center>
+    <br>
+
+   <center> <button id="btnValidar" onclick="libros()">\Enviar/</button></center>
+   <footer>
+    Alvarez Hernandez Juan Pablo  IC41-M
+</footer>
+</body>
+
+</html>
